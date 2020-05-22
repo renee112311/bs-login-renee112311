@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link href="./css/all.min.css" rel="stylesheet">
+  <!--load all styles -->
+  <style>
+    body {
+      background: url('./images/cat.jpg') no-repeat center top/cover;
+    }
+
+    * {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #square {
+      width: 400px;
+      height: 450px;
+      border-radius: 10px;
+      background-color: rgba(34, 34, 34, 0.6);
+      position: relative;
+      color: #FFF;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+
+    #square::before {
+      content: "";
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      top: -15%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    #square::after {
+      content: "";
+      width: 110px;
+      height: 110px;
+      background: url('./images/solid.svg') no-repeat center center/40%;
+      position: absolute;
+      top: -15%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    #square h3 {
+      margin-top: 15%;
+
+    }
+
+    .input-group {
+      margin: 1rem 0;
+    }
+
+    .input-group-prepend {
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+      background-color: black;
+      width: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+  <title>login</title>
+</head>
+
+<body>
+
+  <div class="container vh-100 m-auto d-flex justify-content-center align-items-center">
+
+    <div id="square">
+      <h3>Sign In</h3>
+      <form class="d-flex flex-column  justify-content-center align-items-center">
+        <div class="input-group w-75">
+          <div class="input-group-prepend">
+            <i class="far fa-user"></i>
+          </div>
+          <input class="form-control" type="text" placeholder="Username">
+        </div>
+
+        <div class="input-group w-75">
+          <div class="input-group-prepend">
+            <i class="far fa-keyboard"></i>
+          </div>
+          <input class="form-control" type="password" placeholder="Password">
+        </div>
+        <button class="btn btn-warning btn-lg btn-block my-3 w-75" type="submit">
+          Login</button>
+
+        <div class="row w-75 mt-2" style="font-size: 0.9rem;">
+          <div class="col">
+            <div class="form-group">
+              <input class="form-check-input" type="checkbox" id="check1">
+              <label class="form-check-label" for="check1">Remember me</label>
+            </div>
+
+          </div>
+          <div class="col" style="text-align: right;">
+            <a class="text-light" href="#">Forgot Password?</a>
+          </div>
+        </div>
+
+
+    </div>
+
+
+
+    </form>
+  </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>
